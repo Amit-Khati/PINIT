@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinIt – Save and Organize Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="title">
+            <h1><I>PinIt</I></h1>
+        </div>
+        <nav>
+            <div class="profile">
+                <img src="assets/profile.png" alt="profile-image">
+            </div>
+        </nav>
+    </header>
+
+    <section class="herosection">
+        <div class="hero-content">
+            <h2>Organise your Tabs!</h2>
+            <div>
+                <input type="url" placeholder="Enter website url" id="tab-input">
+                <select name="category" id="tab-category-input">
+                    <option value="" disabled selected>Select a Category</option>
+                    <option value="study">Study</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="socials">Socials</option>
+                    <option value="tools">Tools</option>
+                    <option value="others">Others</option>
+                </select>
+                <button class="btn" id="add-tab-btn">ADD TAB</button>
+            </div>
+        </div>
+    </section>
+    <section class="tabs-section" id="section-study">
+        <h3>STUDY</h3>
+        <ul id="study"></ul>
+    </section>
+    <section class="tabs-section" id="section-entertainment">
+        <h3>ENTERTAINMENT</h3>
+        <ul id="entertainment"></ul>
+    </section>
+    <section class="tabs-section" id="section-socials">
+        <h3>SOCIALS</h3>
+        <ul id="socials"></ul>
+    </section>
+    <section class="tabs-section" id="section-tools">
+        <h3>TOOLS</h3>
+        <ul id="tools"></ul>
+    </section>
+    <section class="tabs-section" id="section-others">
+        <h3>OTHERS</h3>
+        <ul id="others"></ul>
+    </section>
+    <footer>
+        <div id="copyright">&copy; <span id="year"></span> PinIt - By Amit</div>
+        <div class="contact">
+            <a href="https://www.linkedin.com/in/amitkhatiofficial/"><img src="assets/square-linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/Amit-Khati"><img src="assets/github.svg" alt="github"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #F9FAFB;
+    background-image: url("/assets/pattern-waves.svg");
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    color: white;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    padding: 2vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    margin-left: auto;
+}
+
+.title{
+    box-sizing: border-box;
+    margin: 2vh 4vw;
+}
+.profile>img{
+    display: block;
+    width: 50px;
+    height:50px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px solid white;
+}
+.herosection{
+    width: 100%;
+    height: 60vh;
+    align-content: center;
+    justify-items: center;
+}
+
+.hero-content>h2{
+  font-size: 40px; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 3vh;
+  text-align: center;
+}
+
+#tab-input{
+    border: 2px solid #120000;
+    background-color:#0c0c0cbb;
+    color:#333;
+    padding: 10px 20px;
+    width: 40vw; 
+}
+
+#tab-input::placeholder{
+    color: aliceblue;
+    font-style: italic;
+    text-align: center;
+}
+
+#tab-category-input{
+    padding: 10px 20px;
+}
+
+#add-tab-btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#add-tab-btn:hover{
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
+}
+
+.tabs-section{
+    width:100%;
+    border-style: dotted;
+    box-sizing: border-box;
+    padding: 3vh 10vw;
+}
+
+.tabs-section>h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tabs-section>ul{
+    margin-top: 1vh;
+    display: flex;
+    gap: 2vw;
+}
+
+.tabs-section li{
+    list-style: none;
+}
+
+.tabs-section>ul>li>a>img{
+    height: 38px;
+}
+
+.tabs-section button{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 20%;
+    padding: 2px 4px;
+}
+
+footer{
+    display: flex;
+    background-color: wheat;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#copyright{
+    font-style: italic;
+}
+footer>.contact>a>img{
+    height: 24px;
+}
