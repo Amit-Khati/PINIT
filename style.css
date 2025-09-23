@@ -98,6 +98,7 @@ nav{
     margin-top: 1vh;
     display: flex;
     gap: 2vw;
+    flex-wrap: wrap;
 }
 
 .tabs-section li{

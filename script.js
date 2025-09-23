@@ -6,6 +6,12 @@ const addTabBtn = document.getElementById("add-tab-btn")
 let Tabs = []
 
 function loadTabs() {
+    const tabList=document.getElementsByClassName("tabList");
+    for(let i=0;i<tabList.length;i++){
+        if(tabList[i]){
+            tabList[i].innerHTML="";
+        }
+    }
     const savedTabs = JSON.parse(localStorage.getItem("savedTabs") || "[]");
     savedTabs.forEach(tab => {
         if(tab.url && tab.category){
@@ -21,7 +27,8 @@ function addTab(url,category) {
     if (url && category) {
         let tabObj = {
             url: url,
-            category: category
+            category: category,
+         //we will later create a id here as we want a unique identifier even if the user stores the same tab in the same category
         };
         Tabs.push(tabObj);
         localStorage.setItem("savedTabs", JSON.stringify(Tabs));
@@ -46,14 +53,23 @@ function createTabElement(url,category){
             //adding the a element and remove button to the list element
             tabListElement.appendChild(a);
             tabListElement.appendChild(removeBtn);
+            removeBtn.onclick=()=>{
+                removeTab(url,category);
+            }
 
             //finding the right category list for the input and adding it to the list
             const tabCategoryList = document.getElementById(category);
             tabCategoryList.appendChild(tabListElement);
 }
 
-function removeTab(){
-
+function removeTab(tabUrl,tabCategory){
+    const savedTabs = JSON.parse(localStorage.getItem("savedTabs") || "[]");
+    const index = savedTabs.findIndex(Tab => Tab.url === tabUrl && Tab.category=== tabCategory);
+    if (index !== -1) {
+        savedTabs.splice(index,1);
+        localStorage.setItem("savedTabs",JSON.stringify(savedTabs));
+        loadTabs();
+    }
 }
 
 
