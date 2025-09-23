@@ -83,5 +83,7 @@ No server setup required — it’s a pure front-end app.
   - [LinkedIn↗](https://www.linkedin.com/in/amitkhatiofficial/ "Visit Amit's LinkedIn Profile")
   - [Github↗](https://github.com/Amit-Khati "Visit Amit's Github Profile") 
 
+---
+
 ## 📜 License
 This project is licensed under the MIT License – feel free to use and modify it.
