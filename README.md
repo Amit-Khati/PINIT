@@ -1,4 +1,4 @@
-# 📌 PinIt – Save and Organize Tabs
+# 📌 PinIt –*Save and Organize Tabs*
 
 PinIt is a simple **tab organizer web app** that helps you save, categorize, and manage your frequently used websites.  
 It uses **localStorage** to persist your saved links, so your tabs stay organized even after refreshing or reopening the page.
