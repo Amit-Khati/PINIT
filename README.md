@@ -30,7 +30,7 @@ It uses **localStorage** to persist your saved links, so your tabs stay organize
 ## ⚡ How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/pinit.git
+   git clone https://github.com/Amit-Khati/PINIT.git
 2. Open the project folder:
    ```bash
    cd pinit
