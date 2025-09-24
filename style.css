@@ -55,7 +55,7 @@ nav{
     background-color:#0c0c0cbb;
     color:#333;
     padding: 10px 20px;
-    width: 40vw; 
+    width: 50vw; 
 }
 
 #tab-input::placeholder{
@@ -66,6 +66,7 @@ nav{
 
 #tab-category-input{
     padding: 10px 20px;
+    width: 30vw;
 }
 
 #add-tab-btn{
@@ -133,5 +134,11 @@ footer>.contact>a>img{
 }
 
 @media (max-width:768px) {
-    
+   .hero-content>div{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh;
+   }
 }
