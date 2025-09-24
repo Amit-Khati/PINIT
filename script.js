@@ -76,8 +76,10 @@ function removeTab(tabUrl,tabCategory){
 addTabBtn.addEventListener("click",()=>{
     const tabUrl = tabInput.value.trim();
     const tabCategory = tabCategoryInput.value;
+    if (tabCategory && tabUrl){
     addTab(tabUrl,tabCategory);
     createTabElement(tabUrl,tabCategory);
+    }
 })
 
 const year = document.getElementById("year");

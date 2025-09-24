@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     background-color: #F9FAFB;
     background-image: url("/assets/pattern-waves.svg");
     margin: 0;
     padding: 0;
 }
 
-.navbar{
+.navbar {
     color: white;
     box-sizing: border-box;
     background-color: black;
@@ -19,57 +19,64 @@ body{
     width: 100%;
 }
 
-nav{
+nav {
     display: flex;
     margin-left: auto;
 }
 
-.title{
+.title {
     box-sizing: border-box;
     margin: 2vh 4vw;
 }
-.profile>img{
+
+.profile>img {
     display: block;
     width: 50px;
-    height:50px;
-    border-radius: 50%; 
+    height: 50px;
+    border-radius: 50%;
     object-fit: cover;
     border: 2px solid white;
 }
-.herosection{
+
+main {
+    width: 80%;
+    justify-self: center;
+}
+
+.herosection {
     width: 100%;
     height: 60vh;
     align-content: center;
     justify-items: center;
 }
 
-.hero-content>h2{
-  font-size: 40px; 
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 3vh;
-  text-align: center;
+.hero-content>h2 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3vh;
+    text-align: center;
 }
 
-#tab-input{
+#tab-input {
     border: 2px solid #120000;
-    background-color:#0c0c0cbb;
-    color:#333;
+    background-color: #0c0c0cbb;
+    color: #333;
     padding: 10px 20px;
-    width: 50vw; 
+    width: 45vw;
 }
 
-#tab-input::placeholder{
+#tab-input::placeholder {
     color: aliceblue;
     font-style: italic;
     text-align: center;
 }
 
-#tab-category-input{
+#tab-category-input {
     padding: 10px 20px;
-    width: 30vw;
+    width: 20vw;
 }
 
-#add-tab-btn{
+#add-tab-btn {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
@@ -80,37 +87,37 @@ nav{
     cursor: pointer;
 }
 
-#add-tab-btn:hover{
+#add-tab-btn:hover {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
 }
 
-.tabs-section{
-    width:100%;
+.tabs-section {
+    width: 100%;
     border-style: dotted;
     box-sizing: border-box;
     padding: 3vh 10vw;
 }
 
-.tabs-section>h3{
+.tabs-section>h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.tabs-section>ul{
+.tabs-section>ul {
     margin-top: 1vh;
     display: flex;
     gap: 2vw;
     flex-wrap: wrap;
 }
 
-.tabs-section li{
+.tabs-section li {
     list-style: none;
 }
 
-.tabs-section>ul>li>a>img{
+.tabs-section>ul>li>a>img {
     height: 38px;
 }
 
-.tabs-section button{
+.tabs-section button {
     color: white;
     background-color: black;
     box-sizing: border-box;
@@ -119,26 +126,40 @@ nav{
     padding: 2px 4px;
 }
 
-footer{
+.howtosection>h2 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3vh;
+    text-align: center;
+}
+
+footer {
     display: flex;
     background-color: wheat;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-#copyright{
+
+#copyright {
     font-style: italic;
 }
-footer>.contact>a>img{
+
+footer>.contact>a>img {
     height: 24px;
 }
 
 @media (max-width:768px) {
-   .hero-content>div{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2vh;
-   }
+    main {
+        width: 100%;
+    }
+
+    .hero-content>div {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2vh;
+    }
+
 }
