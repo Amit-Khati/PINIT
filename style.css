@@ -9,7 +9,7 @@ html{
 
 body {
     background-color: #F9FAFB;
-    background-image: url("/assets/pattern-waves.svg");
+    background-image: url("assets/pattern-waves.svg");
     margin: 0;
     padding: 0;
     display: flex;
