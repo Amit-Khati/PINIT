@@ -82,5 +82,6 @@ addTabBtn.addEventListener("click",()=>{
     }
 })
 
-const year = document.getElementById("year");
+//Here is the function which automatically updates the year
+const year = document.getElementsByClassName("year")[0];
 year.textContent = new Date().getFullYear();

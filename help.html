@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinIt – Save and Organize Tabs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="help.css">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="title">
+            <h1><I>PinIt</I></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/help.html">Help</a></li>
+            </ul>
+            <div class="profile">
+                <img src="assets/profile.png" alt="profile-image">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="how-to-section">
+            <h2>How To Use PinIt?</h2>
+            <div id="how-to-div">
+                <div class="steps-card">
+                    <h4>Step1:</h4>
+                    <p>First of all you need to visit our website which you might have done already if you are reading
+                        this.</p>
+                </div>
+
+                <div class="steps-card">
+                    <h4>Step2:</h4>
+                    <p>After visiting pin our website if on pc. If on mobile then install our app or add shortcut to home screen.</p>
+                </div>
+
+                <div class="steps-card">
+                    <h4>Step3:</h4>
+                    <p>Now visit which ever site you would like to add. Just copy it's URL and paste it in the url section. </p>
+                </div>
+
+                <div class="steps-card">
+                    <h4>Step4:</h4>
+                    <p>Select the category in which you would like to add it.</p>
+                </div>
+
+                <div class="steps-card">
+                    <h4>Step5:</h4>
+                    <p>Click the Add Tab button and it's done.</p>
+                </div>
+
+                <div class="steps-card">
+                    <h4>Step6:</h4>
+                    <p>So just <b><i>PinIt......</i></b>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="heading-big">Got Any Suggestions or Questions?</div>
+            <div class="contact-card heading-medium">
+                <p>Join Our Discord Community:</p>
+                <a href="/discord"><img src="assets/discord.svg" alt="Discord-logo" height="24px"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="copyright">&copy; <span class="year"></span> PinIt - By Amit</div>
+        <div class="contact">
+            <a href="https://www.linkedin.com/in/amitkhatiofficial/"><img src="assets/square-linkedin.svg"
+                    alt="linkedin"></a>
+            <a href="https://github.com/Amit-Khati"><img src="assets/github.svg" alt="github"></a>
+        </div>
+    </footer>
+    <script>
+        const year = document.getElementsByClassName("year")[0];
+        year.textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

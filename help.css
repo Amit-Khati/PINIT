@@ -1,0 +1,72 @@
+h2 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5vh;
+    text-align: center;
+}
+
+#how-to-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vh;
+    width: 100%;
+    height: 80vh;
+}
+
+.steps-card {
+    display: flex;
+    padding: 5px 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 4px rgb(21, 30, 71);
+    background-image: url("/assets/pattern.svg");
+    background-color: rgb(174, 184, 251);
+}
+
+.steps-card p {
+    text-align: center;
+}
+
+.heading-big{
+    font-weight: 800;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5vh;
+    text-align: center;
+}
+
+.contact-card{
+    display: flex;
+    padding: 5px 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 4px rgb(39, 21, 71);
+    background-image: url("/assets/pattern-dot.svg");
+    background-color: rgb(22, 127, 192);
+}
+
+.heading-medium{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5vh;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    #how-to-div{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
